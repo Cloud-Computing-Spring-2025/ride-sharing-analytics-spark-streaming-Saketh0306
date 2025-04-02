@@ -17,7 +17,7 @@ def generate_ride_event():
     }
 
 # Start streaming using socket
-def start_streaming(host="localhost", port=9999):
+def start_streaming(host="localhost", port=9998):
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.bind((host, port))
     server_socket.listen(5)  # Increase backlog to allow multiple connections
